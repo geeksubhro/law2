@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LawBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="menu-title">Menu</span>
+        <span class="new-chat-icon">&#43;</span>
+        <!-- "+" icon for new chat -->
+      </div>
+      <ul id="item-list" class="item-list">
+        <!-- List items will be inserted here by JavaScript -->
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="top-header">
+        <span class="lawbot-title">LawBot</span>
+        <span class="profile-icon">&#128100;</span>
+        <!-- Profile icon -->
+      </div>
+      <div class="chat-window" id="chat-window">
+        <div class="center-text">Ask What You Want</div>
+      </div>
+      <div class="question-input">
+        <input type="text" id="user-input" placeholder="Enter your message here..." />
+        <button id="send-button">&#10148;</button>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
